@@ -31,6 +31,11 @@ def resolve(ctx):
             git_repository='github.com/steinwurf/gtest.git',
             major=3))
 
+        ctx.add_dependency(resolve.ResolveVersion(
+            name='bitter',
+            git_repository='github.com/steinwurf/bitter.git',
+            major=1))
+
         # ctx.add_dependency(resolve.ResolveVersion(
         #     name='endian',
         #     git_repository='github.com/steinwurf/endian.git',
@@ -51,16 +56,13 @@ def build(bld):
         'STEINWURF_CONDIAN_VERSION="{}"'.format(
             VERSION))
 
-    bld(name='bitter_includes',
-        includes='./src',
-        export_includes='./src',
-        use=['endian_includes'])
+    bld.recurse('src/header_cpp')
 
-    if bld.is_toplevel():
+    # if bld.is_toplevel():
 
-        # Only build tests when executed from the top-level wscript,
-        # i.e. not when included as a dependency
-        bld.recurse('test')
-        bld.recurse('examples/simple_writer')
-        bld.recurse('examples/simple_reader')
-    #    bld.recurse('examples/tcp_header_read_write')
+    #     # Only build tests when executed from the top-level wscript,
+    #     # i.e. not when included as a dependency
+    #     bld.recurse('test')
+    #     bld.recurse('examples/simple_writer')
+    #     bld.recurse('examples/simple_reader')
+    # #    bld.recurse('examples/tcp_header_read_write')
