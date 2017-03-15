@@ -1,0 +1,9 @@
+#! /usr/bin/env python
+# encoding: utf-8
+
+bld.stlib(
+    features='cxx',
+    source=bld.path.ant_glob('**/*.cpp'),
+    target='header_cpp',
+    export_includes=['..'],
+    use=['bitter'])
