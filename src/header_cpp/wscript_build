@@ -5,5 +5,5 @@ bld.stlib(
     features='cxx',
     source=bld.path.ant_glob('**/*.cpp'),
     target='header_cpp',
-    export_includes=['..'],
-    use=['bitter'])
+    use=['bitter_includes'],
+    export_includes=['..'])
