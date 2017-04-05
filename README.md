@@ -9,8 +9,8 @@ To be determined
 
 ## Build
 
-Header\_cpp utilise waf [1](https://waf.io) as build system, with modification provided by Steinwurf Aps [2](http://steinwurf.com), whom provided the modified waf on github
-[3](https://github.com/steinwurf/waf)[4](https://github.com/steinwurf/waf-tools). However, with header\_cpp we distributed the waf binary and you need to do nothing additional.
+Header\_cpp utilise waf [[1]](https://waf.io) as build system, with modification provided by Steinwurf Aps [[2]](http://steinwurf.com), whom provided the modified waf on github
+[[3]](https://github.com/steinwurf/waf)[[4]](https://github.com/steinwurf/waf-tools). However, with header\_cpp we distributed the waf binary and you need to do nothing additional.
 
 For building header\_cpp change directory to the root folder of the project and run the following commands
 
