@@ -19,7 +19,16 @@ For building header\_cpp change directory to the root folder of the project and 
 
 The resulting files should be placed in the resulting build folder.
 
-# Feature Request or Bug Registration
+## Examples
+
+TBW
+
+## Test
+
+header_cpp uses gtest [[5]](https://github.com/google/googletest) for implementing unit tests. The goal for our tests is to verify that functionality works as indented, surprise.
+If you want to run the unit tests on your own simply execute `python waf --run`
+
+## Feature Request or Bug Registration
 
 If you find a feature missing or a header we have missed, or if you simply find a bug. Please use
 the issue tracker, instead of contacting a team directly.
@@ -39,3 +48,4 @@ This project is under the BSD-3-Clause license and the full license can be found
 2. [Steinwurf Aps - steinwurf.com](http://steinwurf.com)
 3. [steinwurf/waf - github.com/steinwurf/waf](https://github.com/steinwurf/waf)
 4. [steinwurf/waf-tools - github.com/steinwurf/waf-tools](https://github.com/steinwurf/waf-tools)
+5. [google/googletest - github.com/google/googletest](https://github.com/google/googletest)
