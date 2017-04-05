@@ -26,7 +26,7 @@ TBW
 ## Test
 
 header_cpp uses gtest [[5]](https://github.com/google/googletest) for implementing unit tests. The goal for our tests is to verify that functionality works as indented, surprise.
-If you want to run the unit tests on your own simply execute `python waf --run`
+If you want to run the unit tests on your own simply execute `python waf --run_tests`
 
 ## Feature Request or Bug Registration
 
