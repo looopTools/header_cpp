@@ -29,3 +29,6 @@
 *.app
 
 *~
+
+bundle_dependencies/
+build/
