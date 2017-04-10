@@ -58,11 +58,11 @@ def build(bld):
 
     bld.recurse('src/header_cpp')
 
-    # if bld.is_toplevel():
+    if bld.is_toplevel():
 
     #     # Only build tests when executed from the top-level wscript,
     #     # i.e. not when included as a dependency
-    #     bld.recurse('test')
+         bld.recurse('test')
     #     bld.recurse('examples/simple_writer')
     #     bld.recurse('examples/simple_reader')
     # #    bld.recurse('examples/tcp_header_read_write')
