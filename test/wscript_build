@@ -4,5 +4,5 @@
 bld.program(
     features='cxx test',
     source=bld.path.ant_glob('**/*.cpp'),
-    target='bitter_tests',
-    use=['bitter_includes', 'gtest'])
+    target='header_cpp_tests',
+    use=['header_cpp', 'gtest'])
